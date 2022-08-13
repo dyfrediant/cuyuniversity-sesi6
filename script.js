@@ -146,7 +146,7 @@ function changeBase(color){
 }
 function changeAccent(color){
     localStorage.setItem('accent', color);
-    $('#accent').attr('href', `public/assets/css/${color}.css`);
+    $('#accent').attr('href', `assets/css/${color}.css`);
     $(`.--theme.--accent[data-id="${color}"]`).siblings().removeClass('--active');
     $(`.--theme.--accent[data-id="${color}"]`).addClass('--active');
 }
