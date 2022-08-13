@@ -1,0 +1,108 @@
+$--color-blue: #1E88E5;
+$--color-white: #FFFFFF;
+$--color-black: #212121;
+
+.--btn{
+    &.--btn-primary{
+        background-color: $--color-blue;
+
+        &:hover{
+            background-color: lighten($--color-blue, 9%);
+        }
+    }
+}
+
+span.--logo-text{
+    background-color: $--color-blue;
+    color: $--color-white;
+}
+
+.--badge{
+
+    &.--badge-primary{
+        background-color: $--color-blue;
+        color: $--color-white;
+    }
+}
+
+.--token-grid{
+
+    .--token-nominal{
+
+        &:hover,
+        &.--active{
+            border-color: $--color-blue;
+        }
+    }
+}
+
+.--homepage-theme{
+
+    .--theme{
+
+        
+        &.--active{
+            border: 1px solid $--color-blue;
+            color: $--color-black;
+        }
+        
+        &:hover:not(.--active){
+            background-color: lighten($--color-blue, 40%);
+            color: $--color-black;
+        }
+    }
+}
+
+body#dimmed,
+body#blackout{
+    .--btn{
+        &.--btn-primary{
+            background-color: lighten($--color-blue, 7%);
+    
+            &:hover{
+                background-color: lighten($--color-blue, 15%);
+            }
+        }
+    }
+    
+    span.--logo-text{
+        background-color: lighten($--color-blue, 7%);
+        color: $--color-white;
+    }
+    
+    .--badge{
+    
+        &.--badge-primary{
+            background-color: lighten($--color-blue, 7%);
+            color: $--color-white;
+        }
+    }
+    
+    .--token-grid{
+    
+        .--token-nominal{
+    
+            &:hover,
+            &.--active{
+                border-color: lighten($--color-blue, 7%);
+            }
+        }
+    }
+    
+    .--homepage-theme{
+    
+        .--theme{
+    
+            
+            &.--active{
+                border: 1px solid lighten($--color-blue, 7%);
+                color: $--color-white;
+            }
+            
+            &:hover:not(.--active){
+                background-color: lighten($--color-blue, 20%);
+                color: $--color-black;
+            }
+        }
+    }
+}

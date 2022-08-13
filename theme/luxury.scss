@@ -1,0 +1,110 @@
+
+$--color-purple: #5E35B1;
+$--color-white: #FFFFFF;
+$--color-black: #212121;
+
+.--btn{
+    &.--btn-primary{
+        background-color: $--color-purple;
+
+        &:hover{
+            background-color: lighten($--color-purple, 9%);
+        }
+    }
+}
+
+span.--logo-text{
+    background-color: $--color-purple;
+    color: $--color-white;
+}
+
+.--badge{
+
+    &.--badge-primary{
+        background-color: $--color-purple;
+        color: $--color-white;
+    }
+}
+
+.--token-grid{
+
+    .--token-nominal{
+
+        &:hover,
+        &.--active{
+            border-color: $--color-purple;
+        }
+    }
+}
+
+.--homepage-theme{
+
+    .--theme{
+
+        
+        &.--active{
+            border: 1px solid $--color-purple;
+            color: $--color-black;
+        }
+        
+        &:hover:not(.--active){
+            background-color: lighten($--color-purple, 40%);
+            color: $--color-black;
+        }
+    }
+}
+
+
+body#dimmed,
+body#blackout{
+    .--btn{
+        &.--btn-primary{
+            background-color: lighten($--color-purple, 7%);
+    
+            &:hover{
+                background-color: lighten($--color-purple, 15%);
+            }
+        }
+    }
+    
+    span.--logo-text{
+        background-color: lighten($--color-purple, 7%);
+        color: $--color-white;
+    }
+    
+    .--badge{
+    
+        &.--badge-primary{
+            background-color: lighten($--color-purple, 7%);
+            color: $--color-white;
+        }
+    }
+    
+    .--token-grid{
+    
+        .--token-nominal{
+    
+            &:hover,
+            &.--active{
+                border-color: lighten($--color-purple, 7%);
+            }
+        }
+    }
+    
+    .--homepage-theme{
+    
+        .--theme{
+    
+            
+            &.--active{
+                border: 1px solid lighten($--color-purple, 7%);
+                color: $--color-white;
+            }
+            
+            &:hover:not(.--active){
+                background-color: lighten($--color-purple, 20%);
+                color: $--color-black;
+            }
+        }
+    }
+}

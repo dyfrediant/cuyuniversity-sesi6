@@ -1,0 +1,63 @@
+.--btn.--btn-primary {
+  background-color: #5E35B1;
+}
+.--btn.--btn-primary:hover {
+  background-color: #754bc9;
+}
+
+span.--logo-text {
+  background-color: #5E35B1;
+  color: #FFFFFF;
+}
+
+.--badge.--badge-primary {
+  background-color: #5E35B1;
+  color: #FFFFFF;
+}
+
+.--token-grid .--token-nominal:hover, .--token-grid .--token-nominal.--active {
+  border-color: #5E35B1;
+}
+
+.--homepage-theme .--theme.--active {
+  border: 1px solid #5E35B1;
+  color: #212121;
+}
+.--homepage-theme .--theme:hover:not(.--active) {
+  background-color: #d2c5ed;
+  color: #212121;
+}
+
+body#dimmed .--btn.--btn-primary,
+body#blackout .--btn.--btn-primary {
+  background-color: #6f43c7;
+}
+body#dimmed .--btn.--btn-primary:hover,
+body#blackout .--btn.--btn-primary:hover {
+  background-color: #8762d0;
+}
+body#dimmed span.--logo-text,
+body#blackout span.--logo-text {
+  background-color: #6f43c7;
+  color: #FFFFFF;
+}
+body#dimmed .--badge.--badge-primary,
+body#blackout .--badge.--badge-primary {
+  background-color: #6f43c7;
+  color: #FFFFFF;
+}
+body#dimmed .--token-grid .--token-nominal:hover, body#dimmed .--token-grid .--token-nominal.--active,
+body#blackout .--token-grid .--token-nominal:hover,
+body#blackout .--token-grid .--token-nominal.--active {
+  border-color: #6f43c7;
+}
+body#dimmed .--homepage-theme .--theme.--active,
+body#blackout .--homepage-theme .--theme.--active {
+  border: 1px solid #6f43c7;
+  color: #FFFFFF;
+}
+body#dimmed .--homepage-theme .--theme:hover:not(.--active),
+body#blackout .--homepage-theme .--theme:hover:not(.--active) {
+  background-color: #9676d6;
+  color: #212121;
+}/*# sourceMappingURL=luxury.css.map */

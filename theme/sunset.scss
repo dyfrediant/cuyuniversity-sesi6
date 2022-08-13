@@ -1,0 +1,110 @@
+
+$--color-orange: #FF5722;
+$--color-white: #FFFFFF;
+$--color-black: #212121;
+
+.--btn{
+    &.--btn-primary{
+        background-color: $--color-orange;
+
+        &:hover{
+            background-color: lighten($--color-orange, 9%);
+        }
+    }
+}
+
+span.--logo-text{
+    background-color: $--color-orange;
+    color: $--color-white;
+}
+
+.--badge{
+
+    &.--badge-primary{
+        background-color: $--color-orange;
+        color: $--color-white;
+    }
+}
+
+.--token-grid{
+
+    .--token-nominal{
+
+        &:hover,
+        &.--active{
+            border-color: $--color-orange;
+        }
+    }
+}
+
+.--homepage-theme{
+
+    .--theme{
+
+        
+        &.--active{
+            border: 1px solid $--color-orange;
+            color: $--color-black;
+        }
+        
+        &:hover:not(.--active){
+            background-color: lighten($--color-orange, 40%);
+            color: $--color-black;
+        }
+    }
+}
+
+
+body#dimmed,
+body#blackout{
+    .--btn{
+        &.--btn-primary{
+            background-color: lighten($--color-orange, 7%);
+    
+            &:hover{
+                background-color: lighten($--color-orange, 15%);
+            }
+        }
+    }
+    
+    span.--logo-text{
+        background-color: lighten($--color-orange, 7%);
+        color: $--color-white;
+    }
+    
+    .--badge{
+    
+        &.--badge-primary{
+            background-color: lighten($--color-orange, 7%);
+            color: $--color-white;
+        }
+    }
+    
+    .--token-grid{
+    
+        .--token-nominal{
+    
+            &:hover,
+            &.--active{
+                border-color: lighten($--color-orange, 7%);
+            }
+        }
+    }
+    
+    .--homepage-theme{
+    
+        .--theme{
+    
+            
+            &.--active{
+                border: 1px solid lighten($--color-orange, 7%);
+                color: $--color-white;
+            }
+            
+            &:hover:not(.--active){
+                background-color: lighten($--color-orange, 20%);
+                color: $--color-black;
+            }
+        }
+    }
+}
