@@ -20,6 +20,18 @@ refreshPay();
 $(document).ready(function(){
     $('.--modal .--modal-header').append(`<a href="javascript:void(0)" onclick="closeModal()" class="--close-modal"><i class="fas fa-close"></i></a>`)
 });
+$(function(){
+    $(window).scroll(function(){
+      var aTop = $('header').height();
+      if($(this).scrollTop()>=aTop){
+        $('header').addClass('scrolled');
+        $('.--homepage-right-content').addClass('scrolled');
+      } else {
+        $('header').removeClass('scrolled');
+        $('.--homepage-right-content').removeClass('scrolled');
+      }
+    });
+});
 $('.--mobile-menu').on('click', function(){
     let target = $(this).attr('data-target');
 

@@ -1,0 +1,63 @@
+.--btn.--btn-primary {
+  background-color: #1E88E5;
+}
+.--btn.--btn-primary:hover {
+  background-color: #479eea;
+}
+
+span.--logo-text {
+  background-color: #1E88E5;
+  color: #FFFFFF;
+}
+
+.--badge.--badge-primary {
+  background-color: #1E88E5;
+  color: #FFFFFF;
+}
+
+.--token-grid .--token-nominal:hover, .--token-grid .--token-nominal.--active {
+  border-color: #1E88E5;
+}
+
+.--homepage-theme .--theme.--active {
+  border: 1px solid #1E88E5;
+  color: #212121;
+}
+.--homepage-theme .--theme:hover:not(.--active) {
+  background-color: #d5e9fa;
+  color: #212121;
+}
+
+body#dimmed .--btn.--btn-primary,
+body#blackout .--btn.--btn-primary {
+  background-color: #3e99e9;
+}
+body#dimmed .--btn.--btn-primary:hover,
+body#blackout .--btn.--btn-primary:hover {
+  background-color: #63aced;
+}
+body#dimmed span.--logo-text,
+body#blackout span.--logo-text {
+  background-color: #3e99e9;
+  color: #FFFFFF;
+}
+body#dimmed .--badge.--badge-primary,
+body#blackout .--badge.--badge-primary {
+  background-color: #3e99e9;
+  color: #FFFFFF;
+}
+body#dimmed .--token-grid .--token-nominal:hover, body#dimmed .--token-grid .--token-nominal.--active,
+body#blackout .--token-grid .--token-nominal:hover,
+body#blackout .--token-grid .--token-nominal.--active {
+  border-color: #3e99e9;
+}
+body#dimmed .--homepage-theme .--theme.--active,
+body#blackout .--homepage-theme .--theme.--active {
+  border: 1px solid #3e99e9;
+  color: #FFFFFF;
+}
+body#dimmed .--homepage-theme .--theme:hover:not(.--active),
+body#blackout .--homepage-theme .--theme:hover:not(.--active) {
+  background-color: #79b8f0;
+  color: #212121;
+}/*# sourceMappingURL=ocean.css.map */

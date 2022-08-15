@@ -96,30 +96,42 @@ header{
     right: 0;
     left: 0;
     z-index: 2;
-
     .--header-container{
         max-width: calc(min(1200px, 90%));
         margin: 24px auto;
-        padding: 24px 16px;
         background-color: $--color-white;
         border-radius: 8px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         box-shadow: $--box-shadow;
-    
-        .--logo{
-    
-            h2{
-                font-size: 1.1rem;
+        transition: max-width .25s ease-out, margin .25s ease-out;
+        .--header-content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 24px 16px;
+            max-width: 100%;
+            transition: max-width .25s ease-out, margin .25s ease-out;
+            .--logo{
+        
+                h2{
+                    font-size: 1.1rem;
+                }
+            }
+        
+            .--header-menu{
+                justify-self: flex-end;
+                .--header-menu-item{
+                    display: inline-block;
+                    margin: 0 8px;
+                }
             }
         }
-    
-        .--header-menu{
-            justify-self: flex-end;
-            .--header-menu-item{
-                display: inline-block;
-                margin: 0 8px;
-            }
+    }
+
+    &.scrolled{
+
+        .--header-container{
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 0;
         }
     }
 }
@@ -322,6 +334,39 @@ header{
 .--homepage-right-content{
     position: sticky;
     top: 125px;
+    transition: top .25s ease-out;
+
+    &.scrolled{
+        top: 85px;
+
+        .--profile-card{
+            .--profile-top{
+                margin-bottom: 0;
+            }
+            .--profile-bottom{
+                display: none;
+            }
+        }
+
+        .--homepage-wallet{
+
+            h5{
+                display: none;
+            }
+
+            .--wallet-status{
+
+                .--token-status,
+                .--pay-status{
+                    padding: 12px;
+                    
+                    p{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 .--card{
     padding: 16px;

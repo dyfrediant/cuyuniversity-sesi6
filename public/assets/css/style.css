@@ -81,34 +81,27 @@ header {
   z-index: 2;
 }
 header .--header-container {
-  max-width: min(1200px, 90%);
+  max-width: min(1200px, 50%);
   margin: 24px auto;
+  padding: 24px 16px;
   background-color: #FFFFFF;
-  border-radius: 8px;
-  box-shadow: 3px 3px 7px rgba(77, 77, 77, 0.23);
-  transition: max-width 0.25s ease-out, margin 0.25s ease-out;
-}
-header .--header-container .--header-content {
+  border-radius: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 24px 16px;
-  max-width: 100%;
-  transition: max-width 0.25s ease-out, margin 0.25s ease-out;
+  box-shadow: 3px 3px 7px rgba(77, 77, 77, 0.23);
 }
-header .--header-container .--header-content .--logo h2 {
+header .--header-container .--logo h2 {
   font-size: 1.1rem;
 }
-header .--header-container .--header-content .--header-menu {
+header .--header-container .--header-menu {
   justify-self: flex-end;
 }
-header .--header-container .--header-content .--header-menu .--header-menu-item {
+header .--header-container .--header-menu .--header-menu-item {
   display: inline-block;
   margin: 0 8px;
 }
-header.scrolled .--header-container {
-  max-width: 100%;
-  margin: 0 auto;
-  border-radius: 0;
+header.x {
+  border: 1px solid red;
 }
 
 .--modal {
@@ -297,27 +290,6 @@ header.scrolled .--header-container {
   position: -webkit-sticky;
   position: sticky;
   top: 125px;
-  transition: top 0.25s ease-out;
-}
-.--homepage-right-content.scrolled {
-  top: 85px;
-}
-.--homepage-right-content.scrolled .--profile-card .--profile-top {
-  margin-bottom: 0;
-}
-.--homepage-right-content.scrolled .--profile-card .--profile-bottom {
-  display: none;
-}
-.--homepage-right-content.scrolled .--homepage-wallet h5 {
-  display: none;
-}
-.--homepage-right-content.scrolled .--homepage-wallet .--wallet-status .--token-status,
-.--homepage-right-content.scrolled .--homepage-wallet .--wallet-status .--pay-status {
-  padding: 12px;
-}
-.--homepage-right-content.scrolled .--homepage-wallet .--wallet-status .--token-status p,
-.--homepage-right-content.scrolled .--homepage-wallet .--wallet-status .--pay-status p {
-  margin-top: 0;
 }
 
 .--card {
